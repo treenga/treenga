@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "parser": "babel-eslint"
+  },
+  "plugins": [
+    "vue"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:vue/recommended"
+  ],
+  "rules": {
+    "semi": "off",
+    "no-param-reassign": "off",
+    "import/no-unresolved": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "commit"
+      }
+    ]
+  }
+}

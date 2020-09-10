@@ -1,0 +1,66 @@
+version: '2'
+services:
+    web:
+        build:
+            context: ./
+            dockerfile: deploy/web.docker
+        volumes:
+            - ./:/var/www
+        ports:
+            - "80:80"
+        links:
+            - app
+        extra_hosts:
+            - "treenga.dda:172.24.0.1"
+    app:
+        build:
+            context: ./
+            dockerfile: deploy/app.docker
+            args:
+                - HOST=treenga.dda
+        volumes:
+            - ./:/var/www
+        links:
+            - database
+            - cache
+            - node
+            - mailhog
+        environment:
+            - "DB_PORT=5432"
+            - "DB_HOST=database"
+            - "REDIS_PORT=6379"
+            - "REDIS_HOST=cache"
+        extra_hosts:
+            - "treenga.dda:172.24.0.1"
+    node:
+        image: node:8.12
+        volumes:
+            - ./:/root/project
+        tty: true
+        environment:
+            - "REDIS_PORT=6379"
+            - "REDIS_HOST=cache"
+        ports:
+            - "6001:6001"
+        extra_hosts:
+            - "treenga.dda:172.24.0.1"
+        working_dir: /root/project
+    database:
+        image: postgres:10.5
+        environment:
+            - "POSTGRES_PASSWORD=secret"
+            - "POSTGRES_DB=db"
+        ports:
+            - "54321:5432"
+    cache:
+        image: redis:3.0
+        ports:
+            - "63791:6379"
+        extra_hosts:
+            - "treenga.dda:172.24.0.1"
+    mailhog:
+            build:
+                context: ./
+                dockerfile: deploy/mailhog.docker
+            ports:
+                - "8025:8025"

@@ -1,0 +1,53 @@
+
+// Typography
+$font-family-sans-serif: "Nunito", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+$main-title: 24px;
+$title: 20px;
+$small-title: 15px;
+$body: 16px;
+$small-body: 14px;
+$sup-text: 13px;
+$editor-text: calc(14px + .15vw + .1vh);
+
+// Colors
+$outline: rgb(102, 177, 255);
+$team-not-active: #223350;
+$team-color-not-active: #47608D;
+$team-color-active: #7A90C1;
+$button-selected: rgb(255, 255, 255);
+$body-bg: rgb(248, 250, 252);
+$dark: rgb(81, 81, 81);
+$task-name: rgb(40, 40, 40);
+$dark-link: rgb(51, 51, 51);
+$dark-blue: rgb(25, 44, 71);
+$light-blue: rgba(89, 105, 136, 1);
+$light-private: rgba(89, 136, 129, 1);
+$bright-blue: rgb(162, 187, 221);
+$blue: #2E3F5D;
+$blue-color: #7A90C1;
+$lighter-gray: rgba(245, 245, 245, 1);
+$light-gray: rgba(228, 228, 228, 1);
+$gray: rgb(220, 223, 230);
+$gray-not-active: rgba(255, 255, 255, .3);
+$tree-hover: rgba(255, 255, 255, .1);
+$gray-active: rgba(255, 255, 255, .7);
+$gray-icon: rgb(161, 161, 161);
+$notification: rgb(46, 187, 255);
+$task-name-underline: rgba(50, 147, 198, 0.6);
+$dropdown-active: rgb(101, 175, 255);
+$active: rgb(64, 158, 255);
+
+$indigo: #6574cd;
+$cog: rgb(55, 97, 159);
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #F7DC1B;
+$green: rgb(35, 209, 96);
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$brown: #FF990F;
