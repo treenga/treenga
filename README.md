@@ -17,4 +17,4 @@ Main app view:
    
 -  [Help center](https://help.treenga.com/)
 
-Treenga is made by using Laravel and Vue.js. Installation instructions will be prepared soon, but if you have Laravel experience, it should not be a problem to install.
+Treenga is made by using Laravel and Vue.js. Installation instructions will be prepared soon, but if you have Laravel experience, it should not be a problem to install it.
