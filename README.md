@@ -18,3 +18,5 @@ Main app view:
 -  [Help center](https://help.treenga.com/)
 
 Treenga is made by using Laravel and Vue.js. Installation instructions will be prepared soon, but if you have Laravel experience, it should not be a problem to install it.
+
+After installation go to [your_server_url]/admin, login using admin/admin name/password **and change password**. Then you can add users.
