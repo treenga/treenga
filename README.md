@@ -1,4 +1,4 @@
-# [Treenga](https://treenga.com/) — Simple and fast issue tracking system
+# Treenga — Simple and fast issue tracking system
 
 Treenga is  **simple**. Team functions as the main umbrella under which all issues sit. It shares everything with all its members. Issues are grouped with hierarchical tags which allow you to create a structure that perfectly replicates your thinking on a project.  
 
